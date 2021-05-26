@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font : 'Lobster',
+    cursive;
+    --bgcolor: #ffffff;
+}
+
+/* ================ HEADER  START ============ */
+
+#header{ 
+    width:100%;
+    position: sticky;
+    top: 0;
+    background-color: var(--bgcolor);
+    display:block;
+    overflow:hidden;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+#header h1{
+
+    float:left;
+    font-size: 30px;
+    position: relative;
+    font-family: var(--font);
+    padding:0;
+    margin: 1px;
+}
+#header h1 span,i {
+    color: red;
+}
+
+#header a{
+    float: right;
+    display: block;
+    position: relative;
+    box-shadow: -1px -1px 4px  black inset;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    color:#ffd32a;
+    margin: 1px;
+}
+#header a span{
+    font-size:15px;
+    color: black;
+    text-align: center;
+    float: left;
+}
+
+/* ============HEADER END ========== */
+
+/* ============MAIN IMG START========== */
+#mainimg{
+    position: relative;;
+    width:100%;
+   
+   
+}
+#mainimg img{
+    width: 100%;
+    object-fit: cover;
+    height:550px;
+ filter: blur(1px);
+ 
+}
+#text{
+
+    position: absolute;
+   text-align: center;
+ bottom: 50%;
+ left: 8%;
+ font-family: var(--font);
+color: #ffffff;
+font-size: 50px;
+text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+}
+#text span{
+    color: red;
+    font-size: 55px;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+/* =========MAIN IMG END ============= */
+
+
+/* =============SERVICES START=========== */
+#service{
+
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+width: 100%;
+background-color:#f1f2f6;
+
+}
+
+.services{
+
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+    flex-grow: 2;
+    text-align: center;
+     line-height: 50px;
+     line-height: 30px;
+     background-color: var(--bgcolor);
+     border-radius: 8px;
+     box-shadow: -1px 2px 5px #dfe4ea;
+     overflow: hidden;
+     
+
+}
+.services i{
+    font-size: 50px;
+    padding: 10px;
+    color: red;
+}
+.services span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   line-height: 70px;
+   font-size: 20px;
+}
+.services:hover{
+    box-shadow:-2px 2px 5px #dfe4ea inset;
+}
+
+/* =============SERVICES END============ */
+
+/* ============FAVORITE START======= */
+#service ~ h4{
+    text-align: center;
+    color: #ffa502;
+}
+
+#service ~ h1{
+    font-family: var(--font);
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 8px;
+}
+
+
+
+#favplace{
+    position: relative;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+    margin: 30px;
+  box-sizing: border-box;
+
+}
+.place{
+    width: 300px;
+    height: 300px;
+    object-fit: fill;
+    box-shadow: 2px 2px 10px black;
+    flex-grow: 1;
+  overflow: hidden;
+    margin: 40px;
+    border-radius: 5px;
+    position: relative;
+      
+}
+.place img{
+         width: 100%;
+         height: 80%;
+        
+}
+.place i{
+   
+    color:#ffa502;
+}
+.place span{
+   
+    opacity: .5;
+}
+
+.place:hover::before{
+    content:"John Doe";
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    bottom: 20%;
+    background-color: rgba(255, 0, 0, 0.329);
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 125px;
+   
+}
+/* ============FAVORITE END=========== */
+
+/* ===============LOGIN START=========== */
+
+#login{
+    
+    display:flex;
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+  background-color: #ffa502;
+   border-radius: 5px;
+    overflow: hidden;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+}
+#logimg{
+
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+#logimg img{
+
+    width: 100%;
+    height: 100%;
+    filter: blur(1px);
+}
+#loginform{
+    float:rigth;
+   text-align: center;
+    height: auto;
+    margin: 0 auto;
+
+}
+#loginform input[type="text"],
+input[type="e-mail"],
+input[type="password"] {
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    width: 80%;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+ border-bottom: 1px solid #000000;
+}
+
+#loginform label{
+    text-align: 50px;
+    text-align: left;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#loginform h1{
+
+    text-align: center;
+    font-family: var(--font);
+    letter-spacing: 5px;
+}
+#loginform input[type="submit"]{
+
+    margin: 20px 0;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    background: red;
+    outline: 0;
+    font-size: 20px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+/* ================LOGIN END ================= */
+/* ====================FOOTER START =============== */
+#footer{
+    width: 100%;
+    background-color: #003566;
+    color: white;
+    text-align:center ;
+    font-size: 15px;
+}
+/* ===============FOOTER END ============ */
